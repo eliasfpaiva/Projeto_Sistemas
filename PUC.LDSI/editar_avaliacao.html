@@ -56,7 +56,7 @@
           <span>Avaliação</span></a>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
+    
        <!-- Nav Item - Utilities Collapse Menu -->
        <li class="nav-item">
         <a class="nav-link" href="avaliacao.html">
@@ -234,9 +234,7 @@
           <!-- Page Heading -->
           <div class="row">
                 <h1 class="h3 mb-4 text-gray-800 col-md-9">Editar Avaliação</h1>
-                 <div class="float-sm-right" >
-                      <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i>    Editar Questionário</button>
-                 </div>  
+                 
           </div>          
              <!-- Main content -->
             <div class="row">
@@ -261,9 +259,9 @@
         <form role="form" method="POST">
              <div class="box-body">
 
-                <?php if(isset($error_msg) && !empty($error_msg)): ?>
-          <div class="warn"><?php echo $error_msg; ?></div>
-        <?php endif; ?>
+              
+          <div class="warn"></div>
+        
 
         
                      <div class="form-group">
@@ -278,12 +276,12 @@
                             
                       <div class="form-group">
                          <label for="materia">Matéria</label>
-                        <input type="text" name="materia" class="form-control" required />
+                        <input type="text" name="materia" class="form-control" required value="Projeto de Sistemas inteligentes" />
                     </div><!-- form-group -->
                 
                     <div class="form-group">
                          <label for="descricao">Descrição</label>
-                        <input type="text" name="descricao" class="form-control" required />
+                        <input type="text" name="descricao" class="form-control" required value= "Analisar dados visando à extração de conhecimento e a aplicação da inteligência artificial na solução de problemas."/>
                     </div><!-- form-group -->
 
                    
@@ -328,7 +326,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; PSI-PUC 2019</span>
           </div>
         </div>
       </footer>
